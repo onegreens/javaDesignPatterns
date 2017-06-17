@@ -9,6 +9,6 @@
  * 设置接口flyBehavier/quackBehavier并加一具体实现
  * 在**Duck.class的构造方法中设置具体属性
  * 通过调用Duck.class的set方法动态修改属性值
- *
+ *s
  */
 package com.cl.strategyPattern;
