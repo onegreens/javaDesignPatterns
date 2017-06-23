@@ -1,6 +1,6 @@
 /**
  * Created by cl on 2017/6/17.
- * 实现气象站的实况更新
+ * 实现气象站的实况更新，为多个站点提供新数据
  *
  * subject和observer是一对多的关系，当subject发生数据变动时，将数据反馈给所有的observer
  * observe通过subject中的注册和移除方法建立关系
