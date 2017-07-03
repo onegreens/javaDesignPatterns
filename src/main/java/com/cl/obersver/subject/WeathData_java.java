@@ -1,4 +1,4 @@
-package com.cl.Obersver.subject;
+package com.cl.obersver.subject;
 
 import java.util.Observable;
 

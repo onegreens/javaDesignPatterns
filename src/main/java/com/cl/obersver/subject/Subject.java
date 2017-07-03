@@ -1,6 +1,6 @@
-package com.cl.Obersver.subject;
+package com.cl.obersver.subject;
 
-import com.cl.Obersver.observer.Observer;
+import com.cl.obersver.observer.Observer;
 
 /**
  * Created by cl on 2017/6/17.

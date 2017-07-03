@@ -1,6 +1,6 @@
-package com.cl.Obersver.subject;
+package com.cl.obersver.subject;
 
-import com.cl.Obersver.observer.Observer;
+import com.cl.obersver.observer.Observer;
 
 import java.util.ArrayList;
 

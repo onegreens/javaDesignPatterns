@@ -7,4 +7,4 @@
  *
  * 带有java声明的类是通过java内置的观察者模式实现相关代码
  */
-package com.cl.Obersver;
+package com.cl.obersver;

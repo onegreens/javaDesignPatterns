@@ -1,4 +1,4 @@
-package com.cl.Obersver.observer;
+package com.cl.obersver.observer;
 
 /**
  * Created by cl on 2017/6/17.

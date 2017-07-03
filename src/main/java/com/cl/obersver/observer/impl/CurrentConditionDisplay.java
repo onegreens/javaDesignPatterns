@@ -1,9 +1,9 @@
-package com.cl.Obersver.observer.impl;
+package com.cl.obersver.observer.impl;
 
-import com.cl.Obersver.observer.DisplayElment;
-import com.cl.Obersver.observer.Observer;
-import com.cl.Obersver.subject.Subject;
-import com.cl.Obersver.subject.WeathData;
+import com.cl.obersver.observer.DisplayElment;
+import com.cl.obersver.observer.Observer;
+import com.cl.obersver.subject.Subject;
+import com.cl.obersver.subject.WeathData;
 
 /**
  * Created by cl on 2017/6/17.

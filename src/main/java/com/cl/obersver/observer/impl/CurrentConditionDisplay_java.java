@@ -1,8 +1,8 @@
-package com.cl.Obersver.observer.impl;
+package com.cl.obersver.observer.impl;
 
-import com.cl.Obersver.observer.DisplayElment;
-import com.cl.Obersver.subject.Subject;
-import com.cl.Obersver.subject.WeathData_java;
+import com.cl.obersver.observer.DisplayElment;
+import com.cl.obersver.subject.Subject;
+import com.cl.obersver.subject.WeathData_java;
 
 import java.util.Observable;
 
