@@ -5,7 +5,7 @@ package com;
  */
 public class ForTest {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         loop:
         for (int j = 0; j < 8; j++) {
             for (int i = 0; i < 5; i++) {
@@ -16,5 +16,9 @@ public class ForTest {
                 }
             }
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }
