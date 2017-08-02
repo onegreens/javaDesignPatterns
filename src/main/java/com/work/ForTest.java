@@ -1,4 +1,4 @@
-package com;
+package com.work;
 
 /**
  * Created by cl on 2017/7/19.
@@ -19,6 +19,10 @@ public class ForTest {
     }
 
     public static void main(String[] args) {
+        float i = 3;
+        float j = 7;
+        float s = i/j;
+        System.out.println(s);
 
     }
 }
