@@ -18,11 +18,18 @@ public class ForTest {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         float i = 3;
         float j = 7;
         float s = i/j;
         System.out.println(s);
 
+    }
+
+    public static void main(String[] args) {
+        String phone = "13419642400";
+        StringBuffer nes = new StringBuffer();
+        nes.append(phone.substring(0,3)).append("****").append(phone.substring(phone.length()- 4));
+        System.out.println(nes);
     }
 }
