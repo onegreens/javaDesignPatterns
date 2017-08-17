@@ -1,4 +1,4 @@
-package com.cl.javaNote.threadNote;
+package com.cl.javaNote.threadNote.base;
 
 /**
  * Created by cl on 2017/8/7.

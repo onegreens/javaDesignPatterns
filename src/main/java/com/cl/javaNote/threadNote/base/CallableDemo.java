@@ -1,4 +1,4 @@
-package com.cl.javaNote.threadNote;
+package com.cl.javaNote.threadNote.base;
 
 import java.util.ArrayList;
 import java.util.concurrent.*;
