@@ -8,9 +8,12 @@ import java.util.Arrays;
 public class SpringTest {
 
     public static void main(String[] args) {
-        SpringTest.test2();
+        SpringTest.test3();
     }
 
+    static void test3() {
+        System.out.println("https://github.com/TTyb/".matches("http.*"));
+    }
     static void test1() {
         System.out.println("-1234".matches("-?\\d+"));
         System.out.println("-1234".matches("-\\d+"));
@@ -25,4 +28,6 @@ public class SpringTest {
         System.out.println(Arrays.toString("1card , 1then".split("d|t")));//一个单词
         System.out.println(Arrays.toString("card,then".split("\\W+")));//非单词字符
     }
+
+
 }

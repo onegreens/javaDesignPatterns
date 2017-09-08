@@ -3,4 +3,4 @@
  *
  * 处理文件相关的应用
  */
-package com.cl.javaNote.file;
+package com.cl.javaNote.io;

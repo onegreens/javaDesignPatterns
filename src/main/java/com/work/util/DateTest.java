@@ -9,7 +9,7 @@ import java.util.Date;
  * Created by cl on 2017/8/4.
  */
 public class DateTest {
-    public static void main(String[] args) throws ParseException {
+    public static void main3(String[] args) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Calendar cl = Calendar.getInstance();
         cl.setTime(sdf.parse("2012-12-31"));

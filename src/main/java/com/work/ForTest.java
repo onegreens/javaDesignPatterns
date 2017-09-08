@@ -26,10 +26,17 @@ public class ForTest {
 
     }
 
-    public static void main(String[] args) {
+    public static void main3(String[] args) {
         String phone = "13419642400";
         StringBuffer nes = new StringBuffer();
         nes.append(phone.substring(0,3)).append("****").append(phone.substring(phone.length()- 4));
         System.out.println(nes);
+    }
+
+    public static void main(String[] args) {
+        String phone = "1341**2400";
+        if (phone.contains("*")){
+            System.out.println("ssssssssssssss");
+        }
     }
 }

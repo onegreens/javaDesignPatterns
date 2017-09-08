@@ -1,4 +1,4 @@
-package com.cl.javaNote.file;
+package com.cl.javaNote.io;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -7,6 +7,8 @@ import java.util.regex.Pattern;
 
 /**
  * Created by cl on 2017/7/26.
+ * 通过使用Arrays.sort()以及String.CASE_INSENSITIVE_ORDER
+ * 对结果进行排序
  */
 public class DirList {
 
