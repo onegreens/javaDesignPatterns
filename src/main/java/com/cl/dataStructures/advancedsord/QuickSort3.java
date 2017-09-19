@@ -1,0 +1,115 @@
+package com.cl.dataStructures.advancedsord;
+
+/**
+ * Created by cl on 2017/9/18.
+ * 快速排序
+ * 对于小于10的数组进行插入排序
+ */
+public class QuickSort3 {
+    private long[] thisArray;
+    private int nElems;
+
+    public QuickSort3(int max) {
+        thisArray = new long[max];
+        this.nElems = 0;
+    }
+
+    void insert(long value) {
+        thisArray[nElems++] = value;
+    }
+
+    void display() {
+        for (int i = 0; i < nElems; i++) {
+            System.out.print(thisArray[i] + " ");
+        }
+        System.out.println();
+    }
+
+    /**
+     * 三项数据排序
+     *
+     * @param left
+     * @param right
+     * @return
+     */
+    long medianOf(int left, int right) {
+        int center = (left + right) / 2;
+        if (thisArray[left] > thisArray[center])
+            swap(left, center);
+        if (thisArray[left] > thisArray[right])
+            swap(left, right);
+        if (thisArray[center] > thisArray[right])
+            swap(center, right);
+
+        swap(center, right - 1);
+        return thisArray[right - 1];
+
+    }
+
+    void swap(int d1, int d2) {
+        long temp;
+        temp = thisArray[d1];
+        thisArray[d1] = thisArray[d2];
+        thisArray[d2] = temp;
+    }
+
+    int partitionIt(int left, int right, long pviot) {
+        int leftPtr = left;
+        int rightPtr = right - 1;
+        while (true) {
+            while (thisArray[++leftPtr] < pviot)
+                ;
+            while (thisArray[--rightPtr] > pviot)
+                ;
+
+            if (leftPtr >= rightPtr)
+                break;
+            else
+                swap(leftPtr, rightPtr);
+        }
+        swap(leftPtr, right - 1);
+        return leftPtr;
+    }
+
+    void insertionSort(int left, int right) {
+        int in, out;
+        for (out = left + 1; out <= right; out++) {
+            long temp = thisArray[out];
+            in = out;
+            while (in > left && thisArray[in - 1] >= temp) {
+                thisArray[in] = thisArray[in - 1];
+                --in;
+            }
+            thisArray[in] = temp;
+        }
+    }
+
+    void recQuickSort(int left, int right) {
+        int size = right - left + 1;
+        if (size < 10)
+            insertionSort(left, right);
+        else {
+            long pivot = medianOf(left, right);
+            int partition = partitionIt(left, right, pivot);
+            recQuickSort(left, partition - 1);
+            recQuickSort(partition + 1, right);
+        }
+    }
+
+    void sort() {
+        recQuickSort(0, nElems - 1);
+    }
+
+    public static void main(String[] args) {
+        int size = 16;
+        QuickSort3 sort = new QuickSort3(size);
+        for (int i = 0; i < size; i++) {
+            sort.insert((long) (Math.random() * 199));
+        }
+        sort.display();
+        sort.sort();
+        sort.display();
+
+    }
+
+}
