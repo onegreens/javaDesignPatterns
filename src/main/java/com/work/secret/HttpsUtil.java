@@ -91,7 +91,6 @@ public class HttpsUtil {
      * 
      * @param url
      *            请求地址
-     * @param content
      *            参数
      * @param charset
      *            编码

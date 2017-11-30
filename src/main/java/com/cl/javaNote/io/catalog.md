@@ -76,3 +76,21 @@
   
 ### ChangeSystemOut
 将System.out 转换成 PrintWriter
+
+### SerializableFile
+对象序列化的常用方法
+
+在序列化中，将对象序列化称为文件，反序列化时，需要有对应的对象类，否则会出现ClassNotFoundException
+
+### Blips
+验证Externalizable在对象构造器上的影响
+
+### Blip3
+示范如何完整的保存和恢复一个Externalizable对象
+
+### Logon
+在Serializable中使用transient 实现类似Externializable的效果
+
+### SerialCtl 
+另一中方法实现Externalizable
+ * 通过添加writeObject()和readObject()方法

@@ -5,7 +5,7 @@ package com.cl.javaNote.threadNote.base;
  * 一个线程可以在其他线程上调用join方法，其效果是等待一段时间直到第二个线程结束才继续执行。
  * 如果某个线程在另一个线程t上调用t.join(),此线程将被挂起，直到目标线程结束之后才恢复
  */
-public class Joining {
+public class  Joining {
     public static void main(String[] args) {
         Sleeper
                 sleeper = new Sleeper("sleeper", 1500),

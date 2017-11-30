@@ -23,6 +23,7 @@ public class SimplePriorities implements Runnable {
     }
 
     public void run() {
+        //设置当前线程优先级
         Thread.currentThread().setPriority(priority);
         while (true) {
             for (int i = 0; i < 10000; i++) {

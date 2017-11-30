@@ -21,7 +21,7 @@ public interface Subject {
     void removeObserver(Observer observer);
 
     /**
-     * 删除
+     * 通知
      */
     void notifyObserver();
 
