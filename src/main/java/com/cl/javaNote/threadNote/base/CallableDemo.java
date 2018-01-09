@@ -15,7 +15,7 @@ public class CallableDemo {
 
         ArrayList<Future<String>> futures = new ArrayList<Future<String>>();
         for (int i = 0; i < 10; i++) {
-            futures.add(service.submit(new TaskWithReult(i)));//
+            futures.add(service.submit(new TaskWithResult(i)));//
         }
         for (Future<String> future :futures){
             try {
@@ -32,10 +32,10 @@ public class CallableDemo {
     }
 }
 
-class TaskWithReult implements Callable<String> {
+class TaskWithResult implements Callable<String> {
     private int id;
 
-    public TaskWithReult(int id) {
+    public TaskWithResult(int id) {
         this.id = id;
     }
 

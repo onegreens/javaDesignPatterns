@@ -26,6 +26,7 @@ public class test {
         Beverage beverage2 = new HouseBlend();
         beverage2 = new Mocha(beverage2);
         beverage2 = new Soy(beverage2);
+
         beverage2 = new Whip(beverage2);
         System.out.println("描述:"+beverage2.getDescription()+"价格:"+beverage2.cost());
 

@@ -19,7 +19,7 @@ public class SimplePriorities implements Runnable {
 
     @Override
     public String toString() {
-        return "SimplePriorities{} " + Thread.currentThread() + ": " + countdown;
+        return "SimplePriorities{"+priority+"} " + Thread.currentThread() + ": " + countdown;
     }
 
     public void run() {

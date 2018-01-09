@@ -9,17 +9,16 @@ import com.cl.pattern.strategyPattern.quack.impl.Quack;
  */
 public class MallardDuck extends Duck {
 
-
     public MallardDuck() {
-        flyBehavier = new FlyWithWings();
-        quackBehavier = new Quack();
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
     }
 
     public void display() {
         System.out.println("i'm  real mallardDuck");
     }
 
-    public static  void main(String[] args){
+    public static void main(String[] args) {
         Duck duck = new MallardDuck();
         duck.performFly();
         duck.performQuack();

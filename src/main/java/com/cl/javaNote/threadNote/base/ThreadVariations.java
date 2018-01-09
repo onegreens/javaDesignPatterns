@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * 通过内部类将线程代码隐藏
  *
  * InnerThread1 :创建了一个宽展字Thread的匿名内部类，并在构造方法中创建了他的实例
- * InnerThread2 ：相对于1展示了可替换的方法，在构造器中创建了一个匿名的Thread的子类，并将其向上转性为Thread，其他方法可通过调用t
+ * InnerThread2 ：相对于1展示了可替换的方法，在构造器中创建了一个匿名的Thread的子类，并将其向上转型为Thread，其他方法可通过调用t
  * InnerRunnable1，InnerRunnable2：改用接口Runnable方法
  * ThreadMethod ：展示在方法内部创建线程
  *

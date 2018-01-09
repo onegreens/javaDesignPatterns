@@ -1,12 +1,29 @@
 package com.cl.test;
 
-import java.util.Calendar;
 import java.util.Date;
 
 /**
  * Created by cl on 2017/11/1.
  */
-public class Test2 {
+public class Test2 extends Test1 {
+
+    private String age;
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Test2{" +
+                "age='" + age + '\'' +
+                '}';
+    }
+
     public static void main(String[] args) {
 //        Calendar calendar = Calendar.getInstance();
 //        calendar.setTime(new Date());
@@ -18,7 +35,7 @@ public class Test2 {
 //        System.out.println("秒: " + calendar.get(Calendar.SECOND));
 //        System.out.println("当前时间毫秒数：" + calendar.getTimeInMillis());
 //        System.out.println(calendar.getTime());
-        System.out.println(new Date().getYear()+1900);
-        System.out.println(new Date().getMonth()+1);
+        System.out.println(new Date().getYear() + 1900);
+        System.out.println(new Date().getMonth() + 1);
     }
 }

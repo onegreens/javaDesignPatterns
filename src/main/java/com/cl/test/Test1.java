@@ -4,6 +4,26 @@ package com.cl.test;
  * Created by cl on 2017/10/9.
  */
 public class Test1 {
+    public Test1() {
+    }
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Test1{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public static void main(String[] args) {
         StringBuffer a = new StringBuffer("A");
         StringBuffer b = new StringBuffer("B");

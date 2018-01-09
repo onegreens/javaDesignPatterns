@@ -9,7 +9,7 @@ import java.sql.SQLException;
  * Created by cl on 2017/9/23.
  */
 public class DBHelper {
-    public static final String url = "jdbc:mysql://172.16.0.126:3306/vipvideo?noDatetimeStringSync=true&autoReconnect=true&allowMultiQueries=true";
+    public static final String url = "jdbc:mysql://localhost:3306/test";
     public static final String name = "com.mysql.jdbc.Driver";
     public static final String user = "root";
     public static final String password = "zCVH5rZmpZPpEWNm";

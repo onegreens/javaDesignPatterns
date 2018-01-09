@@ -19,9 +19,28 @@ public class Test2 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         String str = "1111-22-11";
         if (str.matches("\\w\\w\\w\\w-\\w\\w-\\w\\w"))
             System.out.println("匹配");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(switchTest(2));
+    }
+
+    static Integer switchTest(Integer num) {
+        switch (num) {
+            case 1:
+                System.out.println(1);
+//                return 5;
+            case 2:
+                System.out.println(2);
+//                return 10;
+            case 3:
+                System.out.println(3);
+//                return 15;
+        }
+        return 0;
     }
 }

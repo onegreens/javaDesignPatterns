@@ -1,9 +1,5 @@
 package com.cl.dataStructures.simpleOrder;
 
-import com.cl.dataStructures.array.OrdArray;
-
-import java.util.concurrent.TimeUnit;
-
 /**
  * Created by cl on 2017/9/11.
  * 冒泡排序
@@ -49,6 +45,7 @@ public class ArrayBub {
 
     /**
      * 冒泡排序
+     * 将比较值推到预定位置
      */
     public void bubbleSort() {
         int out, in;
@@ -75,6 +72,7 @@ public class ArrayBub {
 
     /**
      * 选择排序
+     * 将比较值挑选出来，放到预定位置
      */
     public void selectionSort() {
         int in, out, min;

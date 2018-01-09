@@ -9,8 +9,8 @@ import com.cl.pattern.strategyPattern.quack.impl.Quack;
  */
 public class ModelDuck extends Duck {
     public ModelDuck() {
-        flyBehavier = new FlyRocketPowered();
-        quackBehavier = new Quack();
+        flyBehavior = new FlyRocketPowered();
+        quackBehavior = new Quack();
     }
 
     public void display() {
@@ -22,7 +22,7 @@ public class ModelDuck extends Duck {
         duck.performFly();
         duck.performQuack();
         duck.display();
-        duck.setQuackBehavier(new MuteQuack());//动态修改行为
+        duck.setQuackBehavior(new MuteQuack());//动态修改行为
         duck.performQuack();
     }
 }

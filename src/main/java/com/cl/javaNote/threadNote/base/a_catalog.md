@@ -34,7 +34,7 @@ Thread自管理
 ## ThreadVariations
 通过内部类将线程代码隐藏
 
-## CapatureUncaughtException
+## CaptureUncaughtException
 捕获线程异常
 
 ## Joining

@@ -1,7 +1,7 @@
 package com.cl.pattern.strategyPattern.Duck;
 
-import com.cl.pattern.strategyPattern.Fly.FlyBehavier;
-import com.cl.pattern.strategyPattern.quack.QuackBehavier;
+import com.cl.pattern.strategyPattern.Fly.FlyBehavior;
+import com.cl.pattern.strategyPattern.quack.QuackBehavior;
 
 /**
  * Created by cl on 2017/6/17.
@@ -10,10 +10,10 @@ import com.cl.pattern.strategyPattern.quack.QuackBehavier;
 public abstract class Duck {
 
     //添加鸣叫行为
-    QuackBehavier quackBehavier;
+    QuackBehavior  quackBehavior;
 
     //添加飞行行为
-    FlyBehavier flyBehavier;
+    FlyBehavior flyBehavior;
 
     public Duck() {
     }
@@ -21,11 +21,11 @@ public abstract class Duck {
     public abstract void display();
 
     public void performFly() {
-        flyBehavier.fly();
+        flyBehavior.fly();
     }
 
     public void performQuack() {
-        quackBehavier.quack();
+        quackBehavior.quack();
     }
 
     public void swim(){
@@ -34,11 +34,11 @@ public abstract class Duck {
 
     //添加set方法  可以动态的改变属性
 
-    public void setQuackBehavier(QuackBehavier quackBehavier) {
-        this.quackBehavier = quackBehavier;
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
     }
 
-    public void setFlyBehavier(FlyBehavier flyBehavier) {
-        this.flyBehavier = flyBehavier;
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
     }
 }
