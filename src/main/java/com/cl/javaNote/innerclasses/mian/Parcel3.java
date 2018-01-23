@@ -5,7 +5,7 @@ package com.cl.javaNote.innerclasses.mian;//: innerclasses/Parcel3.java
  * 如果创建的是静态内部类，那么它就不需要对外部类对象的引用
  */
 public class Parcel3 {
-  class Contents {
+  static class Contents {
     private int i = 11;
     public int value() { return i; }
   }
@@ -18,7 +18,7 @@ public class Parcel3 {
     Parcel3 p = new Parcel3();
     // Must use instance of outer class
     // to create an instance of the inner class:
-    Parcel3.Contents c = p.new Contents();
+    Parcel3.Contents c = new Parcel3.Contents();
     Parcel3.Destination d = p.new Destination("Tasmania");
   }
 } ///:~

@@ -3,7 +3,7 @@ package com.cl.pattern.obersver.observer.impl;
 import com.cl.pattern.obersver.observer.DisplayElment;
 import com.cl.pattern.obersver.observer.Observer;
 import com.cl.pattern.obersver.subject.Subject;
-import com.cl.pattern.obersver.subject.WeathData;
+import com.cl.pattern.obersver.subject.WeatherData;
 
 /**
  * Created by cl on 2017/6/17.
@@ -35,7 +35,7 @@ public class CurrentConditionDisplay implements DisplayElment,Observer {
 
 
     public static void main(String[] args){
-        WeathData weathData =new WeathData();
+        WeatherData weathData =new WeatherData();
         CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay(weathData);
         weathData.setMeasurements(11,22,33);
         weathData.setMeasurements(12,34,45);

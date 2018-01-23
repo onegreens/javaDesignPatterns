@@ -7,7 +7,7 @@ import java.util.Observable;
  * Created by cl on 2017/6/17.
  * 天气数据
  */
-public class WeathData_java extends Observable {
+public class WeatherData_java extends Observable {
 
     //温度
     private float temperature;
@@ -16,7 +16,7 @@ public class WeathData_java extends Observable {
     //气压
     private float pressure;
 
-    public WeathData_java() {
+    public WeatherData_java() {
     }
 
     public void measurementsChanged() {

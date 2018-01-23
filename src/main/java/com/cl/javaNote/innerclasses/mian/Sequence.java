@@ -57,6 +57,7 @@ public class Sequence {
             selector.next();
         }
     }
+
     public static void main(String[] args) {
         //Practice2
         Sequence sequence = new Sequence(5);

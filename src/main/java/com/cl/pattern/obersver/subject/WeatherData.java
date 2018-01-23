@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created by cl on 2017/6/17.
  * 天气数据
  */
-public class WeathData implements Subject {
+public class WeatherData implements Subject {
 
     private ArrayList observers;
     //温度
@@ -19,7 +19,7 @@ public class WeathData implements Subject {
     //气压
     private float pressure;
 
-    public WeathData() {
+    public WeatherData() {
         observers = new ArrayList();
     }
 

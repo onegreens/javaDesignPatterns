@@ -22,8 +22,11 @@ public class DotThis {
 
     public static void main(String[] args) {
         DotThis dt = new DotThis();
+        DotThis dt2 = new DotThis();
         DotThis.Inner dti = dt.inner();
+        DotThis.Inner dti2 = dt2.inner();
         dti.outer().f();
+        System.out.println(dt.equals(dti2.outer()));
     }
 } /* Output:
 DotThis.f()

@@ -3,7 +3,7 @@ package com.cl.javaNote.innerclasses.practice;
 /**
  * Created by cl on 2018/1/5.
  * 创建一个包含嵌套类的类
- * 在mian中创建其内部类的实例
+ * 在main中创建其内部类的实例
  */
 public class Practice18 {
     static class Nest{

@@ -2,7 +2,7 @@ package com.cl.pattern.obersver.observer.impl;
 
 import com.cl.pattern.obersver.observer.DisplayElment;
 import com.cl.pattern.obersver.subject.Subject;
-import com.cl.pattern.obersver.subject.WeathData_java;
+import com.cl.pattern.obersver.subject.WeatherData_java;
 
 import java.util.Observable;
 
@@ -30,8 +30,8 @@ public class CurrentConditionDisplay_java implements DisplayElment, java.util.Ob
     }
 
     public void update(Observable o, Object arg) {
-        if (o instanceof WeathData_java) {
-            WeathData_java weathData_java = (WeathData_java) o;
+        if (o instanceof WeatherData_java) {
+            WeatherData_java weathData_java = (WeatherData_java) o;
             this.temperature = weathData_java.getTemperature();
             this.humidity = weathData_java.getHumidity();
             display();
@@ -39,7 +39,7 @@ public class CurrentConditionDisplay_java implements DisplayElment, java.util.Ob
     }
 
     public static void main(String[] args) {
-        WeathData_java weathData = new WeathData_java();
+        WeatherData_java weathData = new WeatherData_java();
         CurrentConditionDisplay_java currentConditionDisplay = new CurrentConditionDisplay_java(weathData);
         weathData.setMeasurements(1661, 22, 33);
         weathData.setMeasurements(12, 34, 45);
