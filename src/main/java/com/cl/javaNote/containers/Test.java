@@ -1,4 +1,4 @@
-package com.cl.javaNote.collection_high;
+package com.cl.javaNote.containers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,7 @@ public class Test {
         list.add(2);
         list.add(2);
         list.add(2);
+        System.out.println(list2.size());
 
     }
 }

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * <p>
  * 创建和管理线程本地存储可以有java.lang.ThreadLocal类来实现
  */
-public class ThreadLoacalVariableHolder {
+public class ThreadLocalVariableHolder {
     private static ThreadLocal<Integer> value = new ThreadLocal<Integer>() {
         private Random random = new Random(47);
 
@@ -47,7 +47,7 @@ class Accessor implements Runnable {
 
     public void run() {
         while (!Thread.currentThread().isInterrupted()) {
-            ThreadLoacalVariableHolder.increment();
+            ThreadLocalVariableHolder.increment();
             System.out.println(this);
             Thread.yield();
         }
@@ -57,6 +57,6 @@ class Accessor implements Runnable {
     public String toString() {
         return "Accessor{" +
                 "id=" + id +
-                '}'+ThreadLoacalVariableHolder.get();
+                '}'+ ThreadLocalVariableHolder.get();
     }
 }

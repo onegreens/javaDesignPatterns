@@ -176,6 +176,7 @@ public class ArrayBub {
                 }
             }
         }
+
     }
 
     /**
@@ -235,13 +236,13 @@ public class ArrayBub {
         System.out.println(eq);
     }
 
-    public static void main(String[] args) {
+    public static void main4(String[] args) {
 //        ArrayBub.testmedian();
         ArrayBub.testNoDup();
     }
 
 
-    public static void main4(String[] args) {
+    public static void main(String[] args) {
         /*
         插入排序效率对比
          */

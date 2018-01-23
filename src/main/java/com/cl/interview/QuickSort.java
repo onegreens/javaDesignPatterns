@@ -1,9 +1,7 @@
-package com.cl.dataStructures.advancedsord;
+package com.cl.interview;
 
 /**
- * Created by cl on 2017/9/18.
- * 快速排序
- * 根据关键词将数组分成两组 不断进行该操作
+ * Created by cl on 2018/1/13.
  */
 public class QuickSort {
     private long[] thisArray;
@@ -36,34 +34,24 @@ public class QuickSort {
         int leftPtr = left - 1;
         int rightPtr = right;
         while (true) {
-            while (thisArray[++leftPtr] < pviot)
-                ;
-            while (rightPtr > 0 && thisArray[--rightPtr] > pviot)
-                ;
-
-            if (leftPtr >= rightPtr)
+            while (right>0 && thisArray[--rightPtr] > pviot) ;
+            while (thisArray[++leftPtr] < pviot) ;
+            if (rightPtr <= leftPtr)
                 break;
             else
                 swap(leftPtr, rightPtr);
         }
-        swap(leftPtr, right);
+        swap(leftPtr,right);
         return leftPtr;
     }
 
-    /*
-    把数组或者子数组划分成左边（较小的关键字）的一组和右边（较大的关键字）的一组
-    调用自身对左边的一组进行排序
-    调用自身对右边的一组进行排序
-     */
     void recQuickSort(int left, int right) {
         if (right - left <= 0)
             return;
-        else {
-            long pivot = thisArray[right];
-            int partition = partitionIt(left, right, pivot);
-            recQuickSort(left, partition - 1);
-            recQuickSort(partition + 1, right);
-        }
+        long pviot = thisArray[right];
+        int partition = partitionIt(left, right, pviot);
+        recQuickSort(left, partition - 1);
+        recQuickSort(partition + 1, right);
     }
 
     void sort() {

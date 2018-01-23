@@ -1,4 +1,4 @@
-package com.cl.javaNote.collection_high;
+package com.cl.javaNote.containers;
 
 import com.cl.javaNote.util.Generator;
 

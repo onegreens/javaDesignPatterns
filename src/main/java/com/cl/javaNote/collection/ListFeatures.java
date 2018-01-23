@@ -3,6 +3,7 @@ package com.cl.javaNote.collection;
 import com.cl.javaNote.entity.*;
 
 import java.util.*;
+
 import static com.cl.javaNote.util.Print.print;
 
 /**
@@ -19,7 +20,7 @@ public class ListFeatures {
         print("3: " + pets.contains(h));
         pets.remove(h); // Remove by object
         Pet p = pets.get(2);
-        print("4: " +  p + " " + pets.indexOf(p));
+        print("4: " + p + " " + pets.indexOf(p));
         Pet cymric = new Cymric();
         print("5: " + pets.indexOf(cymric));
         print("6: " + pets.remove(cymric));
