@@ -20,7 +20,7 @@ public class RubberCall implements Quackable {
         observable.registerObserver(observer);
     }
 
-    public void notifyOberservers() {
-        observable.notifyOberservers();
+    public void notifyObservers() {
+        observable.notifyObservers();
     }
 }

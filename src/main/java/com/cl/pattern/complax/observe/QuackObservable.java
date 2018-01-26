@@ -9,5 +9,5 @@ public interface QuackObservable {
 
     public void registerObserver(Observer observer);
 
-    public void notifyOberservers();
+    public void notifyObservers();
 }

@@ -18,7 +18,7 @@ public class Observable implements QuackObservable {
         observers.add(observer);
     }
 
-    public void notifyOberservers() {
+    public void notifyObservers() {
         Iterator iterator = observers.iterator();
         while (iterator.hasNext()) {
             Observer observer = (Observer) iterator.next();

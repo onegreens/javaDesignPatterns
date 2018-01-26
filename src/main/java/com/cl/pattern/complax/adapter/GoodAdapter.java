@@ -21,7 +21,7 @@ public class GoodAdapter implements Quackable {
 
     }
 
-    public void notifyOberservers() {
+    public void notifyObservers() {
 
     }
 }

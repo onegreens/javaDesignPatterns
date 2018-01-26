@@ -16,14 +16,14 @@ public class MallardDuck implements Quackable {
 
     public void quack() {
         System.out.println("绿头鸭的叫声。。。");
-        notifyOberservers();
+        notifyObservers();
     }
 
     public void registerObserver(Observer observer) {
         observable.registerObserver(observer);
     }
 
-    public void notifyOberservers() {
-        observable.notifyOberservers();
+    public void notifyObservers() {
+        observable.notifyObservers();
     }
 }

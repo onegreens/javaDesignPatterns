@@ -10,7 +10,7 @@ import com.cl.pattern.complax.observe.Observer;
 public class DuckCall implements Quackable {
     public void quack() {
         System.out.println("鸭鸣器的叫声音。。。");
-        notifyOberservers();
+        notifyObservers();
     }
 
     Observable observable;
@@ -23,7 +23,7 @@ public class DuckCall implements Quackable {
         observable.registerObserver(observer);
     }
 
-    public void notifyOberservers() {
-        observable.notifyOberservers();
+    public void notifyObservers() {
+        observable.notifyObservers();
     }
 }

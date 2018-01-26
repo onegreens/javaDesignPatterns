@@ -28,7 +28,7 @@ public class QuackCountor implements Quackable {
 
     }
 
-    public void notifyOberservers() {
+    public void notifyObservers() {
 
     }
 }

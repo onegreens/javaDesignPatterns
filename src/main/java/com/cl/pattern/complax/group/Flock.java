@@ -10,7 +10,7 @@ import java.util.Iterator;
  * Created by cl on 2017/8/2.
  */
 public class Flock implements Quackable {
-    ArrayList quackers = new ArrayList();
+    ArrayList<Quackable> quackers = new ArrayList();
 
     public void add(Quackable quackable) {
         quackers.add(quackable);
@@ -28,7 +28,7 @@ public class Flock implements Quackable {
 
     }
 
-    public void notifyOberservers() {
+    public void notifyObservers() {
 
     }
 }
