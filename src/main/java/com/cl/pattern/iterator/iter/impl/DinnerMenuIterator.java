@@ -1,7 +1,8 @@
 package com.cl.pattern.iterator.iter.impl;
 
 import com.cl.pattern.iterator.entity.MenuItem;
-import com.cl.pattern.iterator.iter.Iterator;
+
+import java.util.Iterator;
 
 /**
  * Created by cl on 2017/7/22.

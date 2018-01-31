@@ -1,6 +1,7 @@
 package com.cl.pattern.iterator.entity;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by cl on 2017/7/21.
@@ -21,7 +22,7 @@ public class PanCakeHouseMenu implements Menu {
         menuItems.add(menuItem);
     }
 
-    public java.util.Iterator createIterator(){
+    public Iterator createIterator(){
         return menuItems.iterator();
     }
 }
