@@ -20,8 +20,8 @@ public class Test3 {
         num.put("num", 0);
         System.out.println(num.get("num"));//0
         Test3.change1(num);
-        System.out.println(num.get("num"));//0
+        System.out.println(num.get("num"));//1
         Test3.change2(num);
-        System.out.println(num.get("num"));//0
+        System.out.println(num.get("num"));//2
     }
 }
