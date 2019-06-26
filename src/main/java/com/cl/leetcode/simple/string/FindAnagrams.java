@@ -41,9 +41,64 @@ public class FindAnagrams {
     public static void main(String[] args) {
         //TODO
         System.out.println(findAnagrams("cbaebabacd", "abc"));
+        System.out.println(findAnagrams1("cbaebabacd", "abc"));
     }
 
     public static List<Integer> findAnagrams(String s, String p) {
+        List<Integer> list = new ArrayList<>();
+        int slen = s.length();
+        int plen = p.length();
+        if (plen > slen) return list;
+        String[] ps = p.split("");
+        Map<String, Integer> pMap = new HashMap();
+        for (int i = 0; i < plen; i++) {
+            Integer num = pMap.get(ps[i]);
+            if (num == null) {
+                pMap.put(ps[i], 1);
+            } else {
+                pMap.put(ps[i], num + 1);
+            }
+        }
+        Map<String, Integer> sMap = new HashMap();
+        String[] ss = s.split("");
+
+        boolean is = false;
+        for (int i = 0; i < slen; i++) {
+            int pre = i - plen;
+            String cur = ss[i];
+            if (i >= plen) {
+                if (is) {
+                    if (ss[pre].equals(cur)) {
+                        list.add(pre + 1);
+                        continue;
+                    }
+                }
+                if (sMap.get(ss[pre]) == 1) {
+                    sMap.remove(ss[pre]);
+                } else {
+                    sMap.put(ss[pre], sMap.get(ss[pre]) - 1);
+
+                }
+            }
+            Integer num = sMap.get(cur);
+            if (num == null) {
+                sMap.put(cur, 1);
+            } else {
+                sMap.put(cur, num + 1);
+            }
+            if (i >= plen - 1) {
+                if (sMap.equals(pMap)) {
+                    list.add(pre + 1);
+                    is = true;
+                    continue;
+                }
+            }
+            is = false;
+        }
+        return list;
+    }
+
+    public static List<Integer> findAnagrams1(String s, String p) {
         List<Integer> list = new ArrayList<>();
         int slen = s.length();
         int plen = p.length();
@@ -69,4 +124,5 @@ public class FindAnagrams {
         }
         return list;
     }
+
 }
