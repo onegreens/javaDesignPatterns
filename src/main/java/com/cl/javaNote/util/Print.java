@@ -2,24 +2,39 @@
 // Print methods that can be used without
 // qualifiers, using Java SE5 static imports:
 package com.cl.javaNote.util;
+
 import java.io.*;
 
 public class Print {
-  // Print with a newline:
-  public static void print(Object obj) {
-    System.out.println(obj);
+    // Print with a newline:
+   public static void print(Object obj) {
+   System.out.println(obj);
   }
-  // Print a newline by itself:
-  public static void print() {
-    System.out.println();
-  }
-  // Print with no line break:
-  public static void printnb(Object obj) {
-    System.out.print(obj);
-  }
-  // The new Java SE5 printf() (from C):
-  public static PrintStream
-  printf(String format, Object... args) {
-    return System.out.printf(format, args);
-  }
+    // Print a newline by itself:
+    public static void print() {
+        System.out.println();
+    }
+
+    public static void print(char[] chars) {
+        for (int i = 0; i < chars.length; i++) {
+            System.out.print(chars[i] + " , ");
+        }
+    }
+
+    public static void print(int[] chars) {
+        for (int i = 0; i < chars.length; i++) {
+            System.out.print(chars[i] + " , ");
+        }
+    }
+
+    // Print with no line break:
+    public static void printnb(Object obj) {
+        System.out.print(obj);
+    }
+
+    // The new Java SE5 printf() (from C):
+    public static PrintStream
+    printf(String format, Object... args) {
+        return System.out.printf(format, args);
+    }
 } ///:~

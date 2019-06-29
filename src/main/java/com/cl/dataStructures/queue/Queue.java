@@ -47,7 +47,7 @@ public class Queue {
         return (nItems == maxSize);
     }
 
-    public int getnSize() {
+    public int getSize() {
         return nItems;
     }
 
