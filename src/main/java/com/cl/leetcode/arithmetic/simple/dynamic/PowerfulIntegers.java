@@ -1,4 +1,4 @@
-package com.cl.leetcode.simple.dynamic;
+package com.cl.leetcode.arithmetic.simple.dynamic;
 
 import java.util.ArrayList;
 import java.util.Arrays;

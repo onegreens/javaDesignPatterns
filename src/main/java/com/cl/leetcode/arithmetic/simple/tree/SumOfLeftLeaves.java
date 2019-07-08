@@ -1,4 +1,4 @@
-package com.cl.leetcode.arithmetic.simple;
+package com.cl.leetcode.arithmetic.simple.tree;
 
 import com.cl.leetcode.arithmetic.TreeNode;
 

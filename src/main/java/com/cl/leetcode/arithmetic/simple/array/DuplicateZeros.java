@@ -1,6 +1,6 @@
-package com.cl.leetcode.simple.array;
+package com.cl.leetcode.arithmetic.simple.array;
 
-import static com.cl.leetcode.PrintUtil.print;
+import static com.cl.leetcode.arithmetic.PrintUtil.print;
 
 /**
  * 给你一个长度固定的整数数组 arr，请你将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。
@@ -40,8 +40,6 @@ public class DuplicateZeros {
             }
         }
         for (int i = arr.length - 1; i > 0; i--) {
-            System.out.println();
-            print(arr);
 
             if (arr[i - zero] == 0) {
                 arr[i] = 0;

@@ -1,4 +1,4 @@
-package com.cl.leetcode.simple.array;
+package com.cl.leetcode.arithmetic.simple.array;
 
 /**
  * 给定由一些正数（代表长度）组成的数组 A，返回由其中三个长度组成的、面积不为零的三角形的最大周长。

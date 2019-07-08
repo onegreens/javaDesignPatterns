@@ -1,4 +1,4 @@
-package com.cl.leetcode.simple.array;
+package com.cl.leetcode.arithmetic.simple.array;
 
 /**
  * 回旋镖定义为一组三个点，这些点各不相同且不在一条直线上。

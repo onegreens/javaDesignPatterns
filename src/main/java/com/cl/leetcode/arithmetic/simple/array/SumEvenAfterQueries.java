@@ -1,4 +1,4 @@
-package com.cl.leetcode.simple.array;
+package com.cl.leetcode.arithmetic.simple.array;
 
 /**
  * 给出一个整数数组 A 和一个查询数组 queries。
