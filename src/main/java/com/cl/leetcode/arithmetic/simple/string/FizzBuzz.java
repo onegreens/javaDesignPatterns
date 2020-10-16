@@ -1,4 +1,4 @@
-package com.cl.leetcode.arithmetic.simple;
+package com.cl.leetcode.arithmetic.simple.string;
 
 import java.util.ArrayList;
 import java.util.List;
