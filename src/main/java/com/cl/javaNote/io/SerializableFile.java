@@ -51,7 +51,7 @@ public class SerializableFile {
 
     /**
      * 反序列化
-     * 通过文件
+     * 通过字节数组
      *
      * @param bytes 可通过 ByteArrayOutputStream.toByteArray()获取
      * @return

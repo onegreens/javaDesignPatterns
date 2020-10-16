@@ -8,7 +8,7 @@
 
 - @Override：表示当前的方法定义将覆盖超类中的方法
 - @Deprecated：如果程序员使用了注解为它的元素，那么编译器会发出警告信息
-- @SuppressWarnnings：关闭不当的编译器警告信息
+- @SuppressWarnings：关闭不当的编译器警告信息
 
 
 

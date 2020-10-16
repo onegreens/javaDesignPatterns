@@ -12,7 +12,7 @@ import static com.cl.javaNote.util.Print.print;
  * <p>
  * transient防止字段被序列化
  * <p>
- * 由于Externalizable对象在默认情况下不保存任何字段，所以transient必须配合Serializab  le使用
+ * 由于Externalizable对象在默认情况下不保存任何字段，所以transient必须配合Serializable使用
  */
 public class Logon implements Serializable {
     private Date date = new Date();//反序列化时，并不会重新生成值

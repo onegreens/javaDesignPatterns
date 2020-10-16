@@ -1,0 +1,35 @@
+{
+  "requestId": "1f8db3ebd5c589417f44b07059a6e360",
+  "errCode": null,
+  "errMsg": null,
+  "data": {
+    "success": true,
+    "data": [
+      {
+        "classify_new": "新动能",
+        "classify_code_new": "new",
+        "power_new": 9140643667.46,
+        "classify_old": "旧动能",
+        "classify_code_old": "old",
+        "record_year": "2018"
+      },
+      {
+        "classify_new": "新动能",
+        "classify_code_new": "new",
+        "power_new": 3845144183.63,
+        "classify_old": "旧动能",
+        "classify_code_old": "old",
+        "record_year": "2019"
+      },
+      {
+        "classify_new": "新动能",
+        "classify_code_new": "new",
+        "power_new": 1707534622.91,
+        "classify_old": "旧动能",
+        "classify_code_old": "old",
+        "record_year": "2020"
+      }
+    ],
+    "msg": null
+  }
+}
